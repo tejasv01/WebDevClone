@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA Navbar Replica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="NVIDIAlogo.png" alt="NVIDIA Logo" class="logo">
+            <nav class="nav-left">
+                <a href="https://www.nvidia.com/en-in/products/">Products</a>
+                <a href="https://www.nvidia.com/en-in/solutions/">Solutions</a>
+                <a href="https://www.nvidia.com/en-in/industries/">Industries</a>
+            </nav>
+        </div>
+
+        <div class="navbar-right">
+            <nav class="nav-right">
+                <a href="https://marketplace.nvidia.com/en-in/">Shop</a>
+                <a href="https://www.nvidia.com/en-in/drivers/">Drivers</a>
+                <a href="https://www.nvidia.com/en-in/support/">Support</a>
+            </nav>
+            <div class="icons">
+                <span class="icon">
+                    <a href="https://www.nvidia.com/el-gr/search/"><img src="search.png" style="width:50px; height:auto; margin-top:4px;"/></a>
+                </span>
+                <span class="icon">
+                    <a href="#"><img src="lang.png" style="width:37px; height:auto; margin-top:4px;"/></a>
+                </span>
+                <span class="icon">
+                    <a href="https://static-login.nvidia.com/service/default/index.html?redirect_uri=https%3A%2F%2Flogin.nvidia.com%2Fcallback%2Femail&state=ZSxHJd7ZznLxz3II88Fy8mqxaqczyPKwnUIXVxk9vS9B2JznXJT_Y7V6kKYE_NrFskSl_tA0RK97Cjxy9DAD-Q"><img src="signin.png" style="width:85px; height:auto; margin-top:3px;" /></a>
+                </span>
+            </div>
+        </div>
+    </header>
+
+  <!-- HERO GALLERY SECTION -->
+    <section class="hero-gallery">
+
+    <!-- Hidden radio buttons (control which video is shown) -->
+        <input type="radio" name="video" id="v1" checked>
+        <input type="radio" name="video" id="v2">
+        <input type="radio" name="video" id="v3">
+        <input type="radio" name="video" id="v4">
+        <input type="radio" name="video" id="v5">
+
+        <!-- Background videos -->
+        <video class="bg-video vid1" src="https://www.nvidia.com/content/dam/en-zz/Solutions/homepage/v2/mfg/gtc26-animated-wmfg-desktop.webm" autoplay muted loop></video>
+        <img class="bg-video vid2" src="DassaultAndNvidia.png" />
+        <img class="bg-video vid3" src="AItoSupercharge.jpg" />
+        <img class="bg-video vid4" src="videos/datacenter.mp4" />
+        <img class="bg-video vid5" src="videos/networking.mp4" />
+
+        <!-- Overlay + cards -->
+        <div class="overlay">
+            <div class="gallery-cards">
+                <label class="card" for="v1">
+                    <h4>NVIDIA GTC</h4>
+                    <h2>Experience GTC 2026</h2>
+                </label>
+                <label class="card" for="v2">
+                    <h4>Simulation</h4>
+                    <h2>Dassault Systèmes and NVIDIA to Build Next-Gen Industrial AI Platform</h2>
+                </label>
+                <label class="card" for="v3">
+                    <h4>Artificial Intelligence</h4>
+                    <h2>AI to Supercharge Productivity and Create New Jobs</h2>
+                </label>
+                <label class="card" for="v4">
+                    <h4>HPC</h4>
+                    <h2>Announcing the New NVIDIA Earth-2 Family of Open Models</h2>
+                </label>
+                <label class="card" for="v5">
+                    <h4>Data Center</h4>
+                    <h2>NVIDIA DGX SuperPOD Sets the Stage for Rubin-Based Systems</h2>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <div class="gtc-img">
+        <a href="https://www.nvidia.com/gtc/">
+            <img src="gtc.png" alt="Nvidia GTC" />
+        </a>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <!-- AI gallery -->
+    <div align="left" style="margin-left: 60px;"><h1 style="background-color: #fff;">Artificial Intelligence</h1></div>
+    <div class="ai-scroll-section">
+
+    <!-- LEFT PANEL -->
+        <div class="ai-info">
+            <p>
+            AI is powering change in every industry. From generative AI and speech
+            recognition to medical imaging and improved supply chain management,
+            AI is providing enterprises that compute power, tools, and algorithms
+            their teams need to do their life’s work.
+            </p>
+
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374/item_1669196231595_c_431732407.coreimg.100.630.jpeg/1769659082959/cosmos-contest-sfg.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Artificial Intelligence | Contest</p>
+                <h3><br>The NVIDIA Cosmos Cookoff Is Here<br></h3>
+                <p class="desc">
+                    Join our physical AI challenge and bring virtual worlds to life.
+                    Sponsored by Nebius and Milestone.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374/item_1669196231595.coreimg.100.630.jpeg/1769010180819/wef-fireside-chat-sfg-multi-image.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Artificial Intelligence | Event</p>
+                <h3><br>AI to Supercharge Productivity and Create New Jobs<br></h3>
+                <p class="desc">
+                    NVIDIA CEO Jensen Huang joins BlackRock CEO Larry Fink in a fireside chat at World Economic Forum.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374/item_1722277565106_c.coreimg.100.630.jpeg/1767583330406/dgx-spark-sfg.jpeg" alt="">
+                <div class="card-content">
+                <p class="category">Artificial Intelligence | Blog</p>
+                <h3><br>NVIDIA DGX Spark Gains 2x Performance and Open AI Model Support<br></h3>
+            <p class="desc">
+                The latest DGX Spark software release delivers performance uplift across models and workflows.
+            </p>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374/item_1669196241041.coreimg.100.630.png/1768202913989/nemotron-tech-blog-social-ces26-1920x1080.png" alt="">
+            <div class="card-content">
+                <p class="category">Agentic AI | Blog</p>
+                <h3><br>Build a Voice-Powered, Agent With NVIDIA Nemotron<br></h3>
+                <p class="desc">
+                    Use new Nemotron models for speech, retrieval-augmented generation (RAG), safety, and long-context reasoning.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRESS LINE -->
+    <div class="scroll-line">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    
+    <!--Design and simulation-->
+    <div align="left" style="margin-left: 60px;"><h1 style="background-color: #fff;">Design and Simulation</h1></div>
+    <div class="ai-scroll-section">
+
+    <!-- LEFT PANEL -->
+        <div class="ai-info">
+            <p>
+            NVIDIA accelerated computing, libraries and AI models enable software makers and industry manufacturers to develop products for large-scale, physically accurate simulations and interactive digital twins so teams can efficiently build, train, and test advanced systems before deployment, bringing products to market faster.
+            </p>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/Copy%20of%20nv_carousel_10568374/item_1669209928773.coreimg.100.190.jpeg/1770194883110/dassault-systemes-nvidia-sfg-multi-image.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Simulation | Announcement</p>
+                <h3><br>Dassault Systèmes and NVIDIA to Build Next-Gen Industrial Al Platform<br></h3>
+                <p class="desc">
+                    The partnership combines Dassault Systèmes and NVIDIA technologies to transform industries.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/Copy%20of%20nv_carousel_10568374/item_1676348880688.coreimg.100.190.jpeg/1765953170300/openusd-new-1920x1080.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Simulation | Course</p>
+                <h3><br>Customizable OpenUSD Trainings Now Available<br></h3>
+                <p class="desc">
+                    The Learn OpenUSD curriculum is now open source, empowering you to tailor world-class training content for your community.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/Copy%20of%20nv_carousel_10568374/nv_teaser_copy.coreimg.100.410.jpeg/1754844031037/amazon-lab126.jpeg" alt="">
+                <div class="card-content">
+                <p class="category">Robotics | Blog</p>
+                <h3><br>Amazon Devices & Services Achieves Zero-Touch Manufacturing With NVIDIA<br></h3>
+            <p class="desc">
+                The company’s innovative manufacturing solution powers robotic arms to autonomously audit devices using NVIDIA technologies.
+            </p>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/Copy%20of%20nv_carousel_10568374/item_1717141705488.coreimg.100.190.jpeg/1754673086756/siggraph-25-special-days-openusd-ari-1920x1080.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Simulation | Event</p>
+                <h3><br>OpenUSD Day at SIGGRAPH 2025<br></h3>
+                <p class="desc">
+                    Join us August 13 to learn how developers and industry pioneers are adopting OpenUSD for every application, from content creation and simulation to industrial AI and robotics.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRESS LINE -->
+    <div class="scroll-line">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <!--Gaming and creating-->
+    <div align="left" style="margin-left: 60px;"><h1 style="background-color: #fff;">Gaming and Creating</h1></div>
+    <div class="ai-scroll-section">
+
+    <!-- LEFT PANEL -->
+        <div class="ai-info">
+            <p>
+                NVIDIA GeForce RTX powers the world’s fastest GPUs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI-powered DLSS, and much more in games and applications, on your desktop, laptop, in the cloud, or in your living room.
+            </p>
+
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_1056837463/item_1677208629930_c.coreimg.100.630.jpeg/1770180220653/geforce-rtx-50series-nv-sfg-thumbnail-1920x1080.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Gaming Hardware | Product</p>
+                <h3><br>GeForce RTX 50 Series Graphics Cards and Desktops<br></h3>
+                <p class="desc">
+                    GeForce RTX 50 Series GPUs bring game-changing AI capabilities to gamers and creators. Multiply performance with NVIDIA DLSS 4, generate images at unprecedented speed, and unleash your creativity with NVIDIA Studio.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_1056837463/item_1745916215369.coreimg.100.630.jpeg/1770180246914/geforce-50-series-laptops-1920x1080.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Gaming Hardware | Product</p>
+                <h3><br>GeForce RTX 50 Series Laptops<br></h3>
+                <p class="desc">
+                    The world’s fastest laptops for gamers and creators. Multiply performance with NVIDIA DLSS 4, generate images at unprecedented speed, and unleash your creativity with NVIDIA Studio. All in the thinnest and longest lasting RTX laptops, optimized by Max-Q.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_1056837463/item_1669368462550_c.coreimg.100.630.jpeg/1770264370697/nvidia-key-visual-ari.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Corporate | Event</p>
+                <h3><br>NVIDIA at GDC 2026<br></h3>
+                <p class="desc">
+                    Join us at the Game Developers Conference (GDC) to explore how RTX neural rendering and AI are defining the next era of gaming.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_1056837463/item_1669368462550.coreimg.100.630.jpeg/1770270121029/gfn-thursday-2-2-spotlight-hex-293x166-2x.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Cloud Gaming | Blog</p>
+                <h3><br>GFN Thursday<br></h3>
+                <p class="desc">
+                    See what’s streaming this week on GeForce NOW.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRESS LINE -->
+    <div class="scroll-line">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+
+    <!--Robotics and Edge AI-->
+    <div align="left" style="margin-left: 60px;"><h1 style="background-color: #fff;">Robotics and Edge AI</h1></div>
+    <div class="ai-scroll-section">
+
+    <!-- LEFT PANEL -->
+        <div class="ai-info">
+            <p>
+            The NVIDIA Jetson™ and Isaac™ platforms provide end-to-end solutions to develop and deploy AI-powered autonomous machines and edge computing applications across manufacturing, logistics, healthcare, smart cities, and retail.
+            </p>
+
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/copy_of_copy_of_nv_c/item_1669214522256.coreimg.100.630.jpeg/1765520923394/jetson-holiday-2025-sfg.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Robotics | Offer</p>
+                <h3><br>Make Your Robot’s Holiday Wish Come True<br></h3>
+                <p class="desc">
+                    Celebrate the holidays with the perfect gift for your robot: an NVIDIA Jetson™ AI robotics computer.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/copy_of_copy_of_nv_c/item_1669214460399.coreimg.100.630.jpeg/1761633539058/igx-thor-sfg.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Edge Computing | Blog</p>
+                <h3><br>NVIDIA IGX Thor Brings Blackwell to New Edge AI Applications<br></h3>
+                <p class="desc">
+                    Discover enhanced processing, AI reasoning, safety, and support for industrial, robotics, and medical applications.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/copy_of_copy_of_nv_c/Copy%20of%20nv_teaser_copy_copy.coreimg.100.630.jpeg/1756178136457/robotics-jetson-agx-thor-family-3d-render-03-v008-aw-8k.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Robotics | Blog</p>
+                <h3><br>Amazon Devices & Services Achieves Zero-Touch Manufacturing With NVIDIA<br></h3>
+                <p class="desc">
+                    The company’s innovative manufacturing solution powers robotic arms to autonomously audit devices using NVIDIA technologies.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/copy_of_copy_of_nv_c/item_1669214501170.coreimg.100.630.jpeg/1754893479109/amazon-lab126.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Robotics | Announcement</p>
+                <h3><br>The Ultimate Platform for Physical AI and Robotics<br></h3>
+                <p class="desc">
+                    The new NVIDIA® Jetson Thor™ Developer Kit and module are now available.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRESS LINE -->
+    <div class="scroll-line">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <!-- About -->
+     <div align="left" style="margin-left: 60px;"><h1 style="background-color: #fff;">About NVIDIA</h1></div>
+    <div class="ai-scroll-section">
+
+    <!-- LEFT PANEL -->
+        <div class="ai-info">
+            <p>
+            NVIDIA pioneered accelerated computing to tackle challenges no one else can solve. Our work in AI and digital twins is transforming the world's largest industries and profoundly impacting society.
+            </p>
+
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374_1427616877/nv_teaser_copy_copy.coreimg.100.630.jpeg/1768363527390/gtc26-phase2-sfg.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">NVIDIA GTC | Event</p>
+                <h3><br>Experience GTC 2026<br></h3>
+                <p class="desc">
+                    Join NVIDIA GTC 2026—the premier AI event where developers, researchers, and business leaders converge to explore the next wave of AI innovation.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374_1427616877/item_1686651298451.coreimg.100.630.jpeg/1747720231607/cptx25-keynote-sfg-1920x1080-enus-3752950.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Keynote | Event</p>
+                <h3><br>NVIDIA CEO Jensen Huang Takes the Stage at COMPUTEX 2025<br></h3>
+                <p class="desc">
+                    Tune in to the NVIDIA keynote to see what’s next in AI.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374_1427616877/item_1689310129402.coreimg.100.630.jpeg/1748276697205/nvidia-nv-story-ai-factory-sfg.jpeg" alt="">
+            <div class="card-content">
+                <p class="category">Artificial Intelligence | Video</p>
+                <h3><br>The AI Factory<br></h3>
+                <p class="desc">
+                    Discover how the AI Factory creates tokens to build a future of endless possibilities—accelerated by human ingenuity and NVIDIA.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-item">
+            <img src="https://www.nvidia.com/en-in/home/_jcr_content/root/responsivegrid/nv_carousel_10568374_1427616877/nv_teaser_copy_20067.coreimg.100.630.png/1730875627704/ai-summit-india-special-address-sfg.png" alt="">
+            <div class="card-content">
+                <p class="category">Special Address | Event</p>
+                <h3><br>AI Driving Digital Transformation in India and Beyond<br></h3>
+                <p class="desc">
+                    Discover how AI is fueling India’s groundbreaking innovation, economic growth, and global leadership.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRESS LINE -->
+    <div class="scroll-line">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+    <!-- Top Section -->
+    <div class="footer-top">
+        <div class="footer-column">
+            <h3>Company Information</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Company Overview</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Venture Capital (NVentures)</a></li>
+                <li><a href="#">NVIDIA Foundation</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Corporate Sustainability</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>News and Events</h3>
+            <ul>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Company Blog</a></li>
+                <li><a href="#">Technical Blog</a></li>
+                <li><a href="#">Webinars</a></li>
+                <li><a href="#">Stay Informed</a></li>
+                <li><a href="#">Events Calendar</a></li>
+                <li><a href="#">GTC AI Conference</a></li>
+                <li><a href="#">NVIDIA On-Demand</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Popular Links</h3>
+            <ul>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Executive Insights</a></li>
+                <li><a href="#">Startups and VCs</a></li>
+                <li><a href="#">NVIDIA Connect for ISVs</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Technical Training</a></li>
+                <li><a href="#">Training for IT Professionals</a></li>
+                <li><a href="#">Professional Services for Data Science</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <div class="footer-news">
+        <div class="news-left">
+            <div class="envelope">✉️</div>
+            <p>Sign Up for NVIDIA News</p>
+        </div>
+        <button class="subscribe-btn"><a href="https://www.nvidia.com/en-in/preferences/email-signup/" style="text-decoration:none; color:black">Subscribe</a></button>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <div class="footer-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/sco/2/21/Nvidia_logo.svg" alt="NVIDIA Logo">
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Your Privacy Choices</a> |
+            <a href="#">Legal</a> |
+            <a href="#">Accessibility</a> |
+            <a href="#">Corporate Policies</a> |
+            <a href="#">Product Security</a> |
+            <a href="#">Contact</a>
+        </div>
+        <p class="copyright">© 2026 NVIDIA Corporation</p>
+    </div>
+
+    </footer>
+
+
+</body>
+</html>

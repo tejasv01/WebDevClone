@@ -1,0 +1,474 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 0px 40px;
+    background-color: rgb(250,250,250);
+    border-bottom: 1px solid #eee;
+}
+
+/* Left section (logo + left links) */
+.navbar-left {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 130px;;
+    height:auto;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #777;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-left a:hover {
+    color: #333;
+}
+
+/* Right section */
+.navbar-right {
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 25px;
+    font-size: 0.90rem;
+}
+
+/* Icons and Sign-in */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.icon {
+    font-size: 1.1rem;
+    color: #555;
+    cursor: pointer;
+}
+
+
+/* === HERO GALLERY WITH VIDEO BACKGROUND === */
+/* === LAYOUT === */
+.hero-gallery {
+  position: relative;
+  height: 105vh;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+/* hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* === BACKGROUND VIDEOS === */
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 0;
+}
+
+/* Show the video whose radio button is checked */
+#v1:checked ~ .vid1,
+#v2:checked ~ .vid2,
+#v3:checked ~ .vid3,
+#v4:checked ~ .vid4,
+#v5:checked ~ .vid5 {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* === OVERLAY & CARDS === */
+.overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  padding: 30px 60px;
+}
+
+.gallery-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* === CARDS === */
+.card {
+  width: 250px;
+  border-top: 4px solid rgba(255,255,255,0.2);
+  padding-top: 10px;
+  cursor: pointer;
+  transition: border-top-color 0.3s ease;
+}
+
+.card h4 {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+.card h2 {
+  font-size: 1rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover h4,
+.card:hover h2 {
+  color: #222;
+}
+.card:hover {
+  border-top-color: rgba(255,255,255,0.5);
+}
+
+/* === ACTIVE (when its video is selected) === */
+#v1:checked ~ .overlay label[for="v1"],
+#v2:checked ~ .overlay label[for="v2"],
+#v3:checked ~ .overlay label[for="v3"],
+#v4:checked ~ .overlay label[for="v4"],
+#v5:checked ~ .overlay label[for="v5"] {
+  border-top-color: #76B900;
+}
+#v1:checked ~ .overlay label[for="v1"] h4,
+#v2:checked ~ .overlay label[for="v2"] h4,
+#v3:checked ~ .overlay label[for="v3"] h4,
+#v4:checked ~ .overlay label[for="v4"] h4,
+#v5:checked ~ .overlay label[for="v5"] h4 {
+  color: #222;
+}
+
+.spacer{
+    position: relative;
+    padding: 15px;
+    background-color:#fff;
+    border:none;
+}
+
+.gtc-img img{
+    position: relative;
+    width:100%;
+    height:auto;
+}
+
+/* Reset inside the component */
+
+/* Layout */
+.ai-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 500vh;
+  gap: 40px;
+  padding: 40px 60px;
+  background: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #111;
+}
+
+/* Left text area */
+.ai-info {
+  flex: 1;
+  max-width: 500px;
+}
+
+.ai-info h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ai-info p {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.arrow {
+  color: #76B900;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* Scrollable Gallery */
+/* ===============================
+   SCROLLABLE AI SECTION
+   =============================== */
+
+.ai-scroll-section {
+  display: flex;
+  scrollbar-color: #76B900 #ccc; 
+  align-items: flex-start;
+  gap: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 40px 60px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+  scrollbar-width: 50%;     
+}
+
+
+/* ===============================
+   LEFT PANEL TEXT
+   =============================== */
+
+.ai-info {
+  flex: 0 0 420px;              /* fixed width; scrolls with gallery */
+}
+
+.ai-info h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ai-info p {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.arrow {
+  color: #76B900;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* ===============================
+   CARD DESIGN
+   =============================== */
+
+/* --- CARD ITEM --- */
+.card-item {
+  flex: 0 0 400px;
+  height: 500px;                 /* 🔹 Fixed height for all boxes */
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-item:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-item img {
+  width: 100%;
+  height: 200px;                 /* consistent image height */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  flex: 1;                       /* fills remaining height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Optional: for consistent spacing of text */
+.category {
+  font-size: 0.85rem;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+
+/* ===============================
+   NVIDIA-STYLE FOOTER
+   =============================== */
+
+.footer {
+  background: #000;
+  color: #76B900;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding-top: 40px;
+  border-top: 1px solid #222;
+}
+
+/* --- Top Columns --- */
+/* ===============================
+   NVIDIA-STYLE FOOTER
+   =============================== */
+
+.footer {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* --- Top Columns (Dark Section) --- */
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 60px;
+  background: #000;
+  color: #76B900;
+  border-bottom: 1px solid #333;
+}
+
+.footer-column h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-column li {
+  margin: 8px 0;
+}
+
+.footer-column a {
+  color: #76B900;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* --- Newsletter Section (Still Dark) --- */
+.footer-news {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background: #000;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 20px 60px;
+  color: #fff;
+}
+
+.news-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.envelope {
+  font-size: 1.5rem;
+  color: #76B900;
+}
+
+.subscribe-btn {
+  background: #76B900;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+  background: #5c9300;
+}
+
+/* --- Bottom Section (Light Mode) --- */
+.footer-bottom {
+  background: #f9f9f9;        /* Light background */
+  color: #222;                /* Dark text */
+  text-align: center;
+  padding: 25px 40px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-logo img {
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 6px;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #76B900;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #555;
+}
